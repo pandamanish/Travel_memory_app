@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.13">
+  <diagram name="Page-1" id="7etrQBU_RM7lYVTRpZe0">
+    <mxGraphModel dx="1050" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="POxtLZA-nLwXPAoBnpVN-5" target="POxtLZA-nLwXPAoBnpVN-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-5" value="" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="10" y="40" width="220" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-6" value="frontend" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="80" y="70" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-7" value="backend" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="80" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-13" value="" style="shape=link;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="POxtLZA-nLwXPAoBnpVN-7" target="POxtLZA-nLwXPAoBnpVN-6">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="360" y="250" as="sourcePoint" />
+            <mxPoint x="460" y="250" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-14" value="EC2Instance1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="370" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-15" value="" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="600" y="40" width="220" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-16" value="frontend" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="660" y="70" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-17" value="backend" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="660" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-18" value="" style="shape=link;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="699.5" y="290" as="sourcePoint" />
+            <mxPoint x="699.5" y="150" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-20" value="EC2Instance2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="650" y="370" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-21" value="LoadBalancer" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="344" y="170" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.461;exitY=1.013;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="POxtLZA-nLwXPAoBnpVN-15" target="POxtLZA-nLwXPAoBnpVN-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="230" as="sourcePoint" />
+            <mxPoint x="570" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-26" value="MongoDB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="377" y="430" width="74" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.744;exitY=0.987;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;" edge="1" parent="1" source="POxtLZA-nLwXPAoBnpVN-20" target="POxtLZA-nLwXPAoBnpVN-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="545.5" y="470" as="sourcePoint" />
+            <mxPoint x="580" y="480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="700" y="400" />
+              <mxPoint x="700" y="483" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;" edge="1" parent="1" source="POxtLZA-nLwXPAoBnpVN-5" target="POxtLZA-nLwXPAoBnpVN-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="460" as="sourcePoint" />
+            <mxPoint x="244" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-33" value="Web" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="20" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="POxtLZA-nLwXPAoBnpVN-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.55;entryY=0.95;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="POxtLZA-nLwXPAoBnpVN-21" target="POxtLZA-nLwXPAoBnpVN-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="377" y="130" as="sourcePoint" />
+            <mxPoint x="491" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="414" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
