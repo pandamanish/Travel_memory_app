@@ -2,7 +2,7 @@
 
 This documentation outlines the steps to deploy the TravelMemory application using the MERN stack (MongoDB, Express.js, React, and Node.js) on an AWS EC2 instance. The deployment includes configuring a reverse proxy with Nginx, setting up a load balancer for scaling, and connecting a custom domain using Cloudflare.
 # Architecture Daigram
-  ![Alt text](images/TM.drawio.png)
+  ![Alt text](Images/TM.drawio.png)
 
 # Project Repository
 Access the complete codebase of the TravelMemory application here: [TravelMemory GitHub Repository](https://github.com/UnpredictablePrashant/TravelMemory/tree/main)
@@ -36,7 +36,7 @@ Cloudflare (DNS and Domain Management)
 # Deployment Steps
 MongoDB setup:
    created a cluster and created a database as Travelmemory in compass which stores the data from the frontend.
-   ![Alt text](images/MongoDB.png)
+   ![Alt text](Images/MongoDB.png)
 
 1. Backend Configuration
 Step 1: Clone the Repository
@@ -62,7 +62,7 @@ Step 3: Set up Reverse Proxy with Nginx
   $sudo apt install nginx
   ```
   Edited the Nginx configuration file using and added proxy settings for the backend running on http://<instance-ip>:3000.
-  ![Alt text](images/backend_instance1.png)
+  ![Alt text](Images/backend_instance1.png)
 
   ``` bash 
   $sudo nano /etc/nginx/sites-available/default
@@ -88,23 +88,24 @@ Step 2: Start the Frontend
 
   Started the frontend application using $npm start.
   Restarted Nginx to ensure all configurations were applied correctly.
-  ![Alt text](images/frontend_instance1.png)
-  ![Alt text](images/instance1_tm.png)
+  ![Alt text](Images/frontend_instance1.png)
+  ![Alt text](Images/instance1_tm.png)
 
 3. Scaling the Application
   Created a template from the existing EC2 instance for scaling purposes.
   Launched a new EC2 instance using the template and configured it similarly to the first instance for both the backend and frontend.
-  ![Alt text](images/backend_instance2.png)
-  ![Alt text](images/frontend_instance2.png)
-  ![Alt text](images/instance2_tm.png)
+  ![Alt text](Images/backend_instance2.png)
+  ![Alt text](Images/frontend_instance2.png)
+  ![Alt text](Images/instance2_tm.png)
 
   Set up an AWS Load Balancer:
     Created target groups with both EC2 Instance 1 and Instance 2.
     Configured the load balancer to distribute traffic evenly between the two instances.
+    ![Atl_text](Images/Loadbalancer.png)
   
   4.purchased Host from Godaddy and integrated in cloudflare and in Ctype setting Target setup of loadbalancer's DNS
-   ![Alt text](images/manish-cloudfare-config.JPG)
-   ![Alt text](images/manish-cloudfare.JPG)
+   ![Alt text](Images/manish-cloudfare-config.JPG)
+   ![Alt text](Images/manish-cloudfare.JPG)
 
 # Testing
   Stopped one EC2 instance and verified that the load balancer redirected traffic seamlessly to the other instance, ensuring no downtime during testing. Both backend and frontend worked flawlessly through the load balancer.
